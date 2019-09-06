@@ -18,33 +18,66 @@
         android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
         tools:text="0.0" />
-
-    <TextView
-        android:id="@+id/location_offsetTv"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_weight="1"
-        android:text="Location Offset"
-        android:layout_marginLeft="16dp"/>
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/primary_locationTv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Primary Location" />
+        <TextView
+            android:id="@+id/location_offsetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            tools:text="Location Offset" />
 
-    <TextView
-        android:id="@+id/dateTv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Date" />
+        <TextView
+            android:id="@+id/primary_locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:textColor="@color/textColorEarthquakeLocation"
+            android:textSize="16sp"
+            tools:text="Primary Location" />
 
-    <TextView
-        android:id="@+id/timeTv"
-        android:layout_width="0dp"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Time"/>
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp"
+            tools:text="Date" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp"
+            tools:text="Time"/>
+
+    </LinearLayout>
+
 </LinearLayout>
