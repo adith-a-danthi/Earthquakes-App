@@ -14,11 +14,18 @@
         android:text="Magnitude" />
 
     <TextView
-        android:id="@+id/locationTv"
+        android:id="@+id/location_offsetTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Location" />
+        android:text="Location Offset"/>
+
+    <TextView
+        android:id="@+id/primary_locationTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Primary Location" />
 
     <TextView
         android:id="@+id/dateTv"

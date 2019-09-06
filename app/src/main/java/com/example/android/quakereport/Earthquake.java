@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Earthquake {
 
-    private String mMagnitude;
+    private Double mMagnitude;
 
     private String mLocation;
 
@@ -12,7 +12,7 @@ public class Earthquake {
 
     private long mTimeInMilliseconds;
 
-    public Earthquake(String vMagnitude, String vLocation, long vTimeInMilliseconds){
+    public Earthquake(Double vMagnitude, String vLocation, long vTimeInMilliseconds){
 
         mMagnitude = vMagnitude;
         mLocation = vLocation;
@@ -20,7 +20,7 @@ public class Earthquake {
 
     }
 
-    public String getmMagnitude(){
+    public Double getmMagnitude(){
         return mMagnitude;
     }
 
